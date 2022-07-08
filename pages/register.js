@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
+import NextLink from "next/link";
 
 export default function SignupCard() {
   const [showPassword, setShowPassword] = useState(false);
@@ -92,7 +93,10 @@ export default function SignupCard() {
             </Stack>
             <Stack pt={6}>
               <Text align={"center"}>
-                Already a user? <Link color={"blue.400"}>Login</Link>
+                Already have an account?{" "}
+                <NextLink href="/login">
+                  <Link color={"blue.400"}>Login</Link>
+                </NextLink>
               </Text>
             </Stack>
           </Stack>

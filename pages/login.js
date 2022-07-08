@@ -16,6 +16,7 @@ export default function SplitScreen() {
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
       <Flex flex={1}>
         <Image
+          margin={5}
           rounded="300"
           alt={"Login Image"}
           objectFit={"cover"}
